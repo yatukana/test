@@ -3,7 +3,9 @@ package com.example.demo.model;
 public class Event {
 
 	String guid;
-
+	
+	String sample;
+	
 	int uid;
 
 	public String getGuid() {
@@ -20,6 +22,14 @@ public class Event {
 
 	public void setUid(int uid) {
 		this.uid = uid;
+	}
+
+	public String getSample() {
+		return sample;
+	}
+
+	public void setSample(String sample) {
+		this.sample = sample;
 	}
 
 }
