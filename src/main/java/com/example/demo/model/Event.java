@@ -4,7 +4,7 @@ public class Event {
 
 	String guid;
 	
-	String sample;
+	String sample3;
 	
 	String uid;
 
@@ -25,11 +25,11 @@ public class Event {
 	}
 
 	public String getSample() {
-		return sample;
+		return sample3;
 	}
 
 	public void setSample(String sample) {
-		this.sample = sample;
+		this.sample3 = sample;
 	}
 
 }
