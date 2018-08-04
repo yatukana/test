@@ -12,7 +12,6 @@ public class EventLogicImpl implements EventLogic {
 		// TODO 自動生成されたメソッド・スタブ
 		Event event = new Event();
 		event.setGuid("guidは" + guid + ",uidは");
-		event.setUid(uid);
 		return event;
 	}
 

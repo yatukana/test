@@ -6,13 +6,13 @@ public class Event {
 	
 	String sample;
 	
-	int uid;
+	String uid;
 
 	public String getGuid() {
 		return guid;
 	}
 
-	public int getUid() {
+	public String getUid() {
 		return uid;
 	}
 
@@ -20,7 +20,7 @@ public class Event {
 		this.guid = guid;
 	}
 
-	public void setUid(int uid) {
+	public void setUid(String uid) {
 		this.uid = uid;
 	}
 
