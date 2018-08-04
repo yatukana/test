@@ -3,6 +3,7 @@ package com.example.demo.model;
 public class Event {
 
 	String guid;
+	
 	String sample;
 	
 	int uid;
