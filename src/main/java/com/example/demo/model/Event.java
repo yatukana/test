@@ -2,34 +2,23 @@ package com.example.demo.model;
 
 public class Event {
 
+	int uid;
 	String guid;
-	
-	String sample3;
-	
-	String uid;
-
-	public String getGuid() {
-		return guid;
-	}
-
-	public String getUid() {
-		return uid;
-	}
 
 	public void setGuid(String guid) {
 		this.guid = guid;
 	}
 
-	public void setUid(String uid) {
+	public void setUid(int uid) {
 		this.uid = uid;
 	}
 
-	public String getSample() {
-		return sample3;
+	public String getGuid() {
+		return guid;
 	}
 
-	public void setSample(String sample) {
-		this.sample3 = sample;
+	public int getUid() {
+		return uid;
 	}
 
 }

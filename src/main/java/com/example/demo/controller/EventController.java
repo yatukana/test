@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,13 +15,15 @@ public class EventController {
 	
 	@Autowired
 	EventService eventService;
+//
+//	@RequestMapping(value = { "/" })
+//	public String getEvent(@RequestParam("guid") String guid, @RequestParam("uid") int uid) {
 
-	@RequestMapping(value = { "/" })
-	public String getEvent(@RequestParam("guid") String guid, @RequestParam("uid") int uid) {
+	@RequestMapping(value = { "/events" })
+	public List<Event> getEvent() {	
+		List<Event> eventList = eventService.getEvents();
 		
-		Event event = eventService.getEvent(guid, uid);
-		
-		return event.getGuid() + event.getUid();
+		return eventList;
 
 	}
 

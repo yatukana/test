@@ -1,8 +1,13 @@
 package com.example.demo.logic;
 
+import java.util.List;
+
+import com.example.demo.entity.EventEntity;
 import com.example.demo.model.Event;
 
 public interface EventLogic {
 
-	Event getEvent(String guid, int uid);
+	Event createEvent(String guid, int uid);
+	
+	List<Event> getEvents();
 }

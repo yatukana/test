@@ -1,5 +1,7 @@
 package com.example.demo.serviceImpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,9 +16,9 @@ public class EventServiceImpl implements EventService {
 	EventLogic eventLogic;
 
 	@Override
-	public Event getEvent(String guid, int uid) {
+	public List<Event> getEvents() {
 		// TODO 自動生成されたメソッド・スタブ
-		return eventLogic.getEvent(guid, uid);
+		return eventLogic.getEvents();
 	}
 
 }
